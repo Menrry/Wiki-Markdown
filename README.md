@@ -18,8 +18,10 @@ enciclopedia:
 
 **Cualquiera de las vistas que escriba puede usar estas funciones para interactuar con las entradas de la enciclopedia.**
 
-`#0969DA` Cada entrada de la enciclopedia se guardará como un archivo **Markdown** dentro del **entries/directorio.** Entrando allí ahora, verá que hay  
-previamente algunas entradas de muestra. **¡Al ejecutar el programa podrás agregar más!** `#0969DA`
+Cada entrada de la enciclopedia se guardará como un archivo **Markdown** dentro del **entries/directorio.** Entrando allí ahora, verá que hay  
+previamente algunas entradas de muestra. **¡Al ejecutar el programa podrás agregar más!** Lea [la guía Markdown de GitHub]https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) para comprender cómo funciona la sintaxis de Markdown. Preste especial atención a cómo se ve la sintaxis de Markdown para encabezados, texto en negrita, enlaces y listas.
+
+
 
 **Ahora, echemos un vistazo a :**
 - **encyclopedia/views.py.** Sólo hay una vista aquí inicialmene.
