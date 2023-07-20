@@ -14,7 +14,7 @@ enciclopedia:
 
 - **list_entries** devuelve una lista de los nombres de todas las entradas de la enciclopedia guardadas actualmente. 
 * **save_entry** guardará una nueva entrada de enciclopedia, dado su título y algún contenido de Markdown. 
-+**get_entry** recuperará una entrada de enciclopedia por su título, devolviendo su contenido de Markdown si la entrada existe o None si no existe. 
++ **get_entry** recuperará una entrada de enciclopedia por su título, devolviendo su contenido de Markdown si la entrada existe o None si no existe. 
 
 **Cualquiera de las vistas que escriba puede usar estas funciones para interactuar con las entradas de la enciclopedia.**
 
