@@ -4,10 +4,10 @@
 
 ### Challenge wiki-Markdown
 
-En el código de distribución hay un proyecto llamado **Django wiki** que contiene una sola aplicación llamada encyclopedia.
+En el código de distribución hay un proyecto **Django Llamado wiki** que contiene una sola aplicación llamada **encyclopedia.**
 
-Al abrir encyclopedia/urls.py, dónde se define la configuración de URL para esta aplicación. Se puede observar una ruta predeterminada que está 
-asociada con la función **views.index.**
+Al abrir **encyclopedia/urls.py,** dónde se define la configuración de URL para esta aplicación. Se puede observar una ruta predeterminada que está 
+asociada con la **función views.index.**
 
 Al observar **encyclopedia/util.py.** se apreciará que hay tres funciones que pueden resultar útiles para interactuar con las entradas de la 
 enciclopedia: 
@@ -18,11 +18,13 @@ enciclopedia:
 
 **Cualquiera de las vistas que escriba puede usar estas funciones para interactuar con las entradas de la enciclopedia.**
 
-Cada entrada de la enciclopedia se guardará como un archivo **Markdown** dentro del **entries/directorio.** Entrando allí ahora, verá que hay  
-previamente algunas entradas de muestra. **¡Al ejecutar el programa podrás agregar más!**
+#0969DA Cada entrada de la enciclopedia se guardará como un archivo **Markdown** dentro del **entries/directorio.** Entrando allí ahora, verá que hay  
+previamente algunas entradas de muestra. **¡Al ejecutar el programa podrás agregar más!** #0969DA
 
-Ahora, echemos un vistazo a **encyclopedia/views.py.** Sólo hay una vista aquí ahora, la **index vista**. Esta vista devuelve una plantilla 
-**encyclopedia/index.html,** proporcionando a la plantilla una lista de todas las entradas de la enciclopedia 
+**Ahora, echemos un vistazo a :**
+- **encyclopedia/views.py.** Sólo hay una vista aquí inicialmene.
+* **index vista**. Esta vista devuelve una plantilla 
++ **encyclopedia/index.html,** proporcionando a la plantilla una lista de todas las entradas de la enciclopedia 
 (obtenida llamando a **util.list_entries,** que vimos definida en **util.py**).
 
 Puede encontrar la plantilla explorando **encyclopedia/templates/encyclopedia/index.html.** Esta plantilla hereda de un 
