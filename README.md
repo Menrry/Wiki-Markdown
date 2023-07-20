@@ -18,8 +18,8 @@ enciclopedia:
 
 **Cualquiera de las vistas que escriba puede usar estas funciones para interactuar con las entradas de la enciclopedia.**
 
-#0969DA Cada entrada de la enciclopedia se guardará como un archivo **Markdown** dentro del **entries/directorio.** Entrando allí ahora, verá que hay  
-previamente algunas entradas de muestra. **¡Al ejecutar el programa podrás agregar más!** #0969DA
+`#0969DA` Cada entrada de la enciclopedia se guardará como un archivo **Markdown** dentro del **entries/directorio.** Entrando allí ahora, verá que hay  
+previamente algunas entradas de muestra. **¡Al ejecutar el programa podrás agregar más!** `#0969DA`
 
 **Ahora, echemos un vistazo a :**
 - **encyclopedia/views.py.** Sólo hay una vista aquí inicialmene.
