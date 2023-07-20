@@ -1,6 +1,6 @@
 # Programación web de CS50 con Python y JavaScript
 
-## Challenge wiki-Markdown
+## Challenge harvard.edu wiki-Markdown
 
 [Grabación de pantalla desde 2023-07-19 22-21-21.webm](https://github.com/Menrry/Wiki-Markdown/assets/83178947/af7844b0-ba01-4b29-b07a-c51d02fe3286)
 
