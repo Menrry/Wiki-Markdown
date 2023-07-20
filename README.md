@@ -35,3 +35,30 @@ en este caso, una lista desordenada de todas las entradas de la enciclopedia. **
 define la estructura más amplia de la página: cada página tiene una barra lateral con un campo de búsqueda (que inicialmente no estará configurarda), 
 un enlace para ir a **home** y enlaces **(que deben implementarse)** para crear una nueva página o visita una página al azar.
 
+[Especificación](https://cs50.harvard.edu/web/2020/projects/1/wiki/#specification)
+----------------------------------------------------------------------------------
+
+Complete la implementación de su enciclopedia Wiki. Debes cumplir con los siguientes requisitos:
+
+-   Página de entrada : Visiting `/wiki/TITLE`, donde `TITLE`está el título de una entrada de enciclopedia, debe generar una página que muestre el contenido de esa entrada de enciclopedia.
+    -   La vista debe obtener el contenido de la entrada de la enciclopedia llamando a la `util`función adecuada.
+    -   Si se solicita una entrada que no existe, se le debe presentar al usuario una página de error que indica que no se encontró la página solicitada.
+    -   Si la entrada existe, al usuario se le debe presentar una página que muestre el contenido de la entrada. El título de la página debe incluir el nombre de la entrada.
+-   Página de índice : actualice `index.html`de tal manera que, en lugar de simplemente enumerar los nombres de todas las páginas de la enciclopedia, el usuario puede hacer clic en cualquier nombre de entrada para ir directamente a esa página de entrada.
+-   Buscar : permite al usuario escribir una consulta en el cuadro de búsqueda de la barra lateral para buscar una entrada de la enciclopedia.
+    -   Si la consulta coincide con el nombre de una entrada de la enciclopedia, se debe redirigir al usuario a la página de esa entrada.
+    -   Si la consulta no coincide con el nombre de una entrada de la enciclopedia, se debe llevar al usuario a una página de resultados de búsqueda que muestra una lista de todas las entradas de la enciclopedia que tienen la consulta como una subcadena. Por ejemplo, si la consulta de búsqueda fuera `ytho`, `Python`debería aparecer en los resultados de búsqueda.
+    -   Al hacer clic en cualquiera de los nombres de las entradas en la página de resultados de búsqueda, el usuario debería ir a la página de esa entrada.
+-   Nueva página : al hacer clic en "Crear nueva página" en la barra lateral, el usuario debería ir a una página donde puede crear una nueva entrada de enciclopedia.
+    -   Los usuarios deben poder ingresar un título para la página y, en un [`textarea`](https://www.w3schools.com/tags/tag_textarea.asp), deben poder ingresar el contenido de Markdown para la página.
+    -   Los usuarios deberían poder hacer clic en un botón para guardar su nueva página.
+    -   Cuando se guarda la página, si ya existe una entrada de enciclopedia con el título proporcionado, se le debe presentar al usuario un mensaje de error.
+    -   De lo contrario, la entrada de la enciclopedia se debe guardar en el disco y se debe llevar al usuario a la página de la nueva entrada.
+-   Editar página : en cada página de entrada, el usuario debe poder hacer clic en un enlace para ir a una página donde el usuario puede editar el contenido de Markdown de esa entrada en un archivo `textarea`.
+    -   Debe `textarea`rellenarse previamente con el contenido Markdown existente de la página. (es decir, el contenido existente debe ser la inicial `value`de `textarea`).
+    -   El usuario debe poder hacer clic en un botón para guardar los cambios realizados en la entrada.
+    -   Una vez que se guarda la entrada, se debe redirigir al usuario a la página de esa entrada.
+-   Página aleatoria : Hacer clic en "Página aleatoria" en la barra lateral debería llevar al usuario a una entrada aleatoria de la enciclopedia.
+-   Conversión de Markdown a HTML : en la página de cada entrada, cualquier contenido de Markdown en el archivo de entrada debe convertirse a HTML antes de mostrarse al usuario. Puede usar el [`python-markdown2`](https://github.com/trentm/python-markdown2)paquete para realizar esta conversión, instalable a través de `pip3 install markdown2`.
+    -   Desafío para aquellos más cómodos: si se siente más cómodo, intente implementar la conversión de Markdown a HTML sin usar bibliotecas externas, encabezados de apoyo, texto en negrita, listas desordenadas, enlaces y párrafos. Puede encontrar útil [el uso de expresiones regulares en Python](https://docs.python.org/3/howto/regex.html) .
+
